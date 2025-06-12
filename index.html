@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hypergeometric Calculator with Conflicts</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Hypergeometric Calculator with Conflicts</h2>
+
+    <label>Total population (N):</label>
+    <input type="number" id="N" value="54">
+
+    <label>Sample size (n):</label>
+    <input type="number" id="n" value="5"><br><br>
+
+    <div id="cards"></div>
+    <button onclick="addCard()">+ Add Category</button>
+
+    <div id="conflicts"></div>
+    <button onclick="addConflict()">+ Add Conflict</button>
+
+    <button onclick="calculateAll()">Calculate</button>
+
+    <h3>Results:</h3>
+    <div id="results">---</div>
+
+    <button onclick="exportTXT(category, conflict, finalProbability)">Export TXT</button>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
