@@ -9,11 +9,16 @@
   <div class="container">
     <h2>Hypergeometric Calculator with Conflicts</h2>
 
+    <p class="description">
+      This tool allows you to calculate the probability of specific outcomes from a finite population, using the hypergeometric distribution.
+      You can define multiple categories, set minimum and maximum desired successes, and even specify conflicts when items belong to more than one category.
+    </p>
+
     <label>Total population (N):</label>
-    <input type="number" id="N">
+    <input type="number" id="N" placeholder="Ex: 54">
 
     <label>Sample size (n):</label>
-    <input type="number" id="n"><br><br>
+    <input type="number" id="n" placeholder="Ex: 9"><br><br>
 
     <button onclick="addCard()">+ Add Category</button>
     <div id="cards"></div>

@@ -20,6 +20,18 @@ body {
     margin: auto;
 }
 
+.description {
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    line-height: 1.5;
+    background-color: var(--hover-color);
+    padding: 12px 16px;
+    border-left: 4px solid var(--highlight-color);
+    border-radius: 6px;
+}
+
 .card,
 .conflict {
     border: 1px solid var(--hover-color);
