@@ -32,9 +32,9 @@ function addCard() {
     card.innerHTML = `
     <strong>Category</strong><br>
     Name: <input type="text" id="name-${id}" placeholder="Ex: Joker">
-    In population (K): <input type="number" id="K-${id}">
-    Min desired: <input type="number" id="minK-${id}">
-    Max desired: <input type="number" id="maxK-${id}">
+    In population (K): <input type="number" id="K-${id}" placeholder="Ex: 2">
+    Min desired: <input type="number" id="minK-${id}" placeholder="Ex: 1">
+    Max desired: <input type="number" id="maxK-${id}" placeholder="Ex: 2">
     <button onclick="removeCard(${id})">Remove</button>
     `;
     container.appendChild(card);
@@ -53,9 +53,9 @@ function addConflict() {
     div.id = `conflict-card-${id}`;
     div.innerHTML = `
     <strong>Conflict:</strong><br>
-    Category 1: <input type="text" class="conf-cat1">
-    Category 2: <input type="text" class="conf-cat2">
-    Items in common: <input type="number" class="conf-qtd">
+    Category 1: <input type="text" class="conf-cat1" placeholder="Ex: Ace">
+    Category 2: <input type="text" class="conf-cat2" placeholder="Ex: Hearts">
+    Items in common: <input type="number" class="conf-qtd" placeholder="Ex: 1">
     <button onclick="removeConflictCard(${id})">Remove</button>
     `;
     container.appendChild(div);
