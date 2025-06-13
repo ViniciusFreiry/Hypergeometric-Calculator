@@ -3,6 +3,7 @@ let conflictCardCounter = 0;
 let category = [];
 let conflict = [];
 let finalProbability = 0;
+addCard();
 
 function factorial(n) {
     if (n === 0 || n === 1) return 1;
@@ -29,7 +30,7 @@ function addCard() {
     card.className = "card";
     card.id = `card-${id}`;
     card.innerHTML = `
-    <strong>Category ${id + 1}</strong><br>
+    <strong>Category</strong><br>
     Name: <input type="text" id="name-${id}" placeholder="Ex: Joker">
     In population (K): <input type="number" id="K-${id}">
     Min desired: <input type="number" id="minK-${id}">
@@ -105,15 +106,12 @@ function calculateAll() {
 
     // Adjust Ks for conflicting categories
     correctedConflicts.forEach(({ cat1, cat2, qtd }) => {
-        if (categories[cat1]) categories[cat1].K -= qtd;
-        if (categories[cat2]) categories[cat2].K -= qtd;
-
         const intersectionName = `${cat1} & ${cat2}`;
         categories[intersectionName] = {
             name: intersectionName,
             K: qtd,
             minK: 0,
-            maxK: qtd,
+            maxK: 0,
             prob: 0
         };
     });
