@@ -62,8 +62,8 @@ git clone https://github.com/your-username/hypergeometric-calculator.git
 cd hypergeometric-calculator
 ```
 
-Then open index.html in your browser.
-- No build steps or dependencies required.
+# Then open index.html in your browser.
+> No build steps or dependencies required.
 
 ---
 
